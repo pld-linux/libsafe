@@ -1,6 +1,3 @@
-# TODO: fix src/Makefile, pass CFLAGS
-# util.c: In function `_libsafe_warn':
-# util.c:1449: error: `LIBSAFE_VERSION' undeclared (first use in this function)
 Summary:	Protecting Critical Elements of Stacks
 Summary(pl):	Ochrona krytycznych elementów stosów.
 Name:		libsafe
