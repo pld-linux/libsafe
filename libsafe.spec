@@ -1,4 +1,8 @@
+# TODO: fix src/Makefile, pass CFLAGS
+# util.c: In function `_libsafe_warn':
+# util.c:1449: error: `LIBSAFE_VERSION' undeclared (first use in this function)
 Summary:	Protecting Critical Elements of Stacks
+Summary(pl):	Ochrona krytycznych elementów stosów.
 Name:		libsafe
 Version:	2.0
 %define	sver	16
@@ -21,6 +25,18 @@ ensures that any buffer overflows are contained within the current stack
 frame. Libsafe has been shown to detect several known attacks and can
 potentially prevent yet unknown attacks. Experiments indicate that the
 performance overhead of libsafe is negligible.
+
+%description -l pl
+Biblioteka libsafe chroni procesy przed wykorzystaniem podatno¶ci na
+przepe³nienie bufora w stosach procesu. Libsafe dzia³a z ka¿dym
+prekompilowanym obiektem wykonywalnym i mo¿e byæ u¿ywana w sposób
+przezroczysty, nawet jako podstawa systemu. Metod± dzia³ania jest
+przechwytywanie wszystkich odwo³añ do funkcji bibliotecznych, które s± znane
+jako podatne. Zastêpcza wersja odpowiadaj±cej funkcji implementuje oryginaln±
+funkcjonalno¶æ, ale w sposób zapewniaj±cy, ¿e jakiekolwiek przepe³nienia bufora
+zawieraj± siê wewn±trz bie¿±cej ramki stosu. Libsafe zosta³a u¿yta do wykrycia
+kilku znanych ataków i mo¿e potencjalnie zapobiegaæ jeszcze nieznanym.
+Eksperymenty wskazuj±, ¿e wp³yw libsafe na wydajno¶æ jest nieistotny.
 
 %prep
 %setup -q -n %{name}-%{version}-%{sver}
