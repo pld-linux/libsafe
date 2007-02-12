@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	Protecting Critical Elements of Stacks
-Summary(pl):	Ochrona krytycznych elementów stosów
+Summary(pl.UTF-8):   Ochrona krytycznych elementÃ³w stosÃ³w
 Name:		libsafe
 Version:	2.0
 %define	sver	16
@@ -25,18 +25,18 @@ to detect several known attacks and can potentially prevent yet
 unknown attacks. Experiments indicate that the performance overhead of
 libsafe is negligible.
 
-%description -l pl
-Biblioteka libsafe chroni procesy przed wykorzystaniem podatno¶ci na
-przepe³nienie bufora w stosach procesu. Libsafe dzia³a z ka¿dym
-prekompilowanym obiektem wykonywalnym i mo¿e byæ u¿ywana w sposób
-przezroczysty, nawet jako podstawa systemu. Metod± dzia³ania jest
-przechwytywanie wszystkich odwo³añ do funkcji bibliotecznych, które s±
-znane jako podatne. Zastêpcza wersja odpowiadaj±cej funkcji
-implementuje oryginaln± funkcjonalno¶æ, ale w sposób zapewniaj±cy, ¿e
-jakiekolwiek przepe³nienia bufora zawieraj± siê wewn±trz bie¿±cej
-ramki stosu. Libsafe zosta³a u¿yta do wykrycia kilku znanych ataków i
-mo¿e potencjalnie zapobiegaæ jeszcze nieznanym. Eksperymenty wskazuj±,
-¿e wp³yw libsafe na wydajno¶æ jest nieistotny.
+%description -l pl.UTF-8
+Biblioteka libsafe chroni procesy przed wykorzystaniem podatnoÅ›ci na
+przepeÅ‚nienie bufora w stosach procesu. Libsafe dziaÅ‚a z kaÅ¼dym
+prekompilowanym obiektem wykonywalnym i moÅ¼e byÄ‡ uÅ¼ywana w sposÃ³b
+przezroczysty, nawet jako podstawa systemu. MetodÄ… dziaÅ‚ania jest
+przechwytywanie wszystkich odwoÅ‚aÅ„ do funkcji bibliotecznych, ktÃ³re sÄ…
+znane jako podatne. ZastÄ™pcza wersja odpowiadajÄ…cej funkcji
+implementuje oryginalnÄ… funkcjonalnoÅ›Ä‡, ale w sposÃ³b zapewniajÄ…cy, Å¼e
+jakiekolwiek przepeÅ‚nienia bufora zawierajÄ… siÄ™ wewnÄ…trz bieÅ¼Ä…cej
+ramki stosu. Libsafe zostaÅ‚a uÅ¼yta do wykrycia kilku znanych atakÃ³w i
+moÅ¼e potencjalnie zapobiegaÄ‡ jeszcze nieznanym. Eksperymenty wskazujÄ…,
+Å¼e wpÅ‚yw libsafe na wydajnoÅ›Ä‡ jest nieistotny.
 
 %prep
 %setup -q -n %{name}-%{version}-%{sver}
