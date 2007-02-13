@@ -1,6 +1,6 @@
 # TODO: optflags
 Summary:	Protecting Critical Elements of Stacks
-Summary(pl.UTF-8):   Ochrona krytycznych elementów stosów
+Summary(pl.UTF-8):	Ochrona krytycznych elementów stosów
 Name:		libsafe
 Version:	2.0
 %define	sver	16
